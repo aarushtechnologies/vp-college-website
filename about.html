@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodingWale - Aditya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-5 bg-gray-900">
+    <h1 class="text-2xl font-bold text-blue-400">CodingWale</h1>
+    <ul class="flex gap-6">
+      <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+      <li><a href="#courses" class="hover:text-blue-400">Courses</a></li>
+      <li><a href="#teachers" class="hover:text-blue-400">Teachers</a></li>
+      <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">Welcome to CodingWale</h2>
+    <p class="text-gray-400 mb-6">Learn Programming from Basics to Advanced</p>
+    <button onclick="scrollToCourses()" class="bg-blue-500 px-6 py-2 rounded hover:bg-blue-600">
+      Explore Courses
+    </button>
+  </section>
+
+  <!-- Courses -->
+  <section id="courses" class="py-16 bg-gray-900 text-center">
+    <h2 class="text-3xl font-bold mb-10">Our Courses</h2>
+    <div class="grid md:grid-cols-3 gap-8 px-10">
+      
+      <div class="bg-gray-800 p-5 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">C++ Programming</h3>
+        <p>Learn basic to advanced C++ concepts.</p>
+        <p class="text-blue-400 mt-2">₹999</p>
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Python</h3>
+        <p>Start your journey with Python programming.</p>
+        <p class="text-blue-400 mt-2">₹799</p>
+      </div>
+
+      <div class="bg-gray-800 p-5 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+        <p>HTML, CSS, JavaScript full course.</p>
+        <p class="text-blue-400 mt-2">₹1299</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Teachers -->
+  <section id="teachers" class="py-16 text-center">
+    <h2 class="text-3xl font-bold mb-10">Our Teachers</h2>
+    <div class="flex justify-center gap-10 flex-wrap">
+      
+      <div>
+        <img src="https://via.placeholder.com/150" class="rounded-full mb-3">
+        <h3>Aditya Sir</h3>
+        <p class="text-gray-400">Programming Expert</p>
+      </div>
+
+      <div>
+        <img src="https://via.placeholder.com/150" class="rounded-full mb-3">
+        <h3>Rahul Sir</h3>
+        <p class="text-gray-400">Web Developer</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-900 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+    <p>📞 8605757784</p>
+    <p>📧 adityaghaywat34@gmail.com</p>
+    
+    <button onclick="showAlert()" class="mt-5 bg-blue-500 px-6 py-2 rounded hover:bg-blue-600">
+      Enroll Now
+    </button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-5 bg-black text-gray-500">
+    © 2026 CodingWale. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showAlert() {
+      alert("Thank you for your interest! We will contact you soon.");
+    }
+
+    function scrollToCourses() {
+      document.getElementById("courses").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
