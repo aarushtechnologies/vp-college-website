@@ -5,87 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinayakrao Patil College</title>
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="bg-gray-100 font-sans">
+
+<body class="bg-gray-50 font-sans">
 
     <!-- Navbar -->
-    <nav class="bg-blue-900 text-white p-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">Vinayakrao Patil College</h1>
-        <ul class="flex space-x-6">
-            <li><a href="#" class="hover:text-yellow-300">Home</a></li>
-            <li><a href="#" class="hover:text-yellow-300">About</a></li>
-            <li><a href="#" class="hover:text-yellow-300">Courses</a></li>
-            <li><a href="#" class="hover:text-yellow-300">Admissions</a></li>
-            <li><a href="#" class="hover:text-yellow-300">Contact</a></li>
+    <nav class="bg-gradient-to-r from-blue-900 to-blue-700 text-white p-4 flex justify-between items-center shadow-lg sticky top-0 z-50">
+        <h1 class="text-xl font-bold tracking-wide">Vinayakrao Patil College</h1>
+        <ul class="flex space-x-6 text-sm md:text-base">
+            <li><a href="#" class="hover:text-yellow-300 transition">Home</a></li>
+            <li><a href="#" class="hover:text-yellow-300 transition">About</a></li>
+            <li><a href="#" class="hover:text-yellow-300 transition">Courses</a></li>
+            <li><a href="#" class="hover:text-yellow-300 transition">Admissions</a></li>
+            <li><a href="#" class="hover:text-yellow-300 transition">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-blue-700 text-white text-center py-20">
-        <h2 class="text-4xl font-bold mb-4">Welcome to Vinayakrao Patil College</h2>
-        <p class="text-lg mb-6">Empowering Students for a Better Future</p>
-        <a href="#" class="bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-300">
+    <section class="bg-gradient-to-r from-blue-800 to-indigo-700 text-white text-center py-24 px-6">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            Welcome to Vinayakrao Patil College
+        </h2>
+        <p class="text-lg md:text-xl mb-6 opacity-90">
+            Empowering Students for a Better Future with Quality Education
+        </p>
+        <a href="#" class="bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-yellow-300 transition transform hover:scale-105">
             Apply Now
         </a>
     </section>
 
     <!-- About Section -->
-    <section class="py-10 px-6 text-center">
-        <h2 class="text-2xl font-bold mb-4">About Our College</h2>
-        <p class="max-w-3xl mx-auto text-gray-700">
+    <section class="py-14 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">About Our College</h2>
+        <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed text-lg">
             Vinayakrao Patil College is dedicated to providing quality education and
             shaping the future of students with modern knowledge and skills. We offer
-            various undergraduate and postgraduate programs.
+            various undergraduate and postgraduate programs designed to meet industry demands.
         </p>
     </section>
 
     <!-- Courses Section -->
-    <section class="bg-white py-10 px-6">
-        <h2 class="text-2xl font-bold text-center mb-8">Our Courses</h2>
+    <section class="bg-white py-14 px-6">
+        <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Our Courses</h2>
 
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-3 gap-8">
 
-            <div class="bg-gray-100 p-6 rounded-lg shadow">
-                <h3 class="font-bold text-lg mb-2">B.Sc Computer Science</h3>
-                <p>Learn programming, databases, and modern technologies.</p>
+            <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+                <h3 class="font-bold text-xl mb-2 text-blue-700">B.Sc Computer Science</h3>
+                <p class="text-gray-600">Learn programming, databases, DevOps, and modern technologies.</p>
             </div>
 
-            <div class="bg-gray-100 p-6 rounded-lg shadow">
-                <h3 class="font-bold text-lg mb-2">B.Com</h3>
-                <p>Build strong knowledge in commerce and finance.</p>
+            <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+                <h3 class="font-bold text-xl mb-2 text-blue-700">B.Com</h3>
+                <p class="text-gray-600">Build strong knowledge in commerce, business, and finance.</p>
             </div>
 
-            <div class="bg-gray-100 p-6 rounded-lg shadow">
-                <h3 class="font-bold text-lg mb-2">B.A</h3>
-                <p>Explore humanities, languages, and social sciences.</p>
+            <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+                <h3 class="font-bold text-xl mb-2 text-blue-700">B.A</h3>
+                <p class="text-gray-600">Explore humanities, languages, and social sciences.</p>
             </div>
 
         </div>
     </section>
 
     <!-- Notice Board -->
-    <section class="py-10 px-6 text-center">
-        <h2 class="text-2xl font-bold mb-4">Latest Notices</h2>
-        <ul class="text-gray-700 space-y-2">
-            <li>📢 Admissions Open for 2026</li>
-            <li>📢 Semester Exams Schedule Released</li>
-            <li>📢 New DevOps Workshop Coming Soon</li>
-        </ul>
+    <section class="py-14 px-6 text-center bg-gray-100">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">Latest Notices</h2>
+
+        <div class="max-w-xl mx-auto bg-white rounded-xl shadow p-6">
+            <ul class="text-gray-700 space-y-3 text-left">
+                <li class="border-b pb-2">📢 Admissions Open for 2026</li>
+                <li class="border-b pb-2">📢 Semester Exams Schedule Released</li>
+                <li>📢 New DevOps Workshop Coming Soon</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="bg-blue-900 text-white py-10 text-center">
-        <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-        <p>Email: info@vpc.edu.in</p>
-        <p>Phone: +91 9876543210</p>
-        <p>Address: Maharashtra, India</p>
+    <section class="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-14 text-center">
+        <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+        <p class="mb-2">📧 info@vpc.edu.in</p>
+        <p class="mb-2">📞 +91 9876543210</p>
+        <p>📍 Maharashtra, India</p>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white text-center p-4">
+    <footer class="bg-black text-white text-center p-4 text-sm">
         <p>© 2026 Vinayakrao Patil College | All Rights Reserved</p>
     </footer>
 
